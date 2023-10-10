@@ -23,9 +23,8 @@ body {
 }
 .container {
     font-family: 'Hanken Grotesk', sans-serif;
-/* background-color: var(--neutral-white); */
+background-color: var(--neutral-white);
 height: 100%;
-background-color: rgb(144, 201, 201);
 min-height: fit-content;
 max-height: fit-content;
 }
@@ -74,11 +73,10 @@ max-height: fit-content;
 
 .summary {
     height: 60%;
-    background-color: aquamarine;
+    background-color: var(--neutral-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
-   /* align-items: center; */
     gap: 20px;
     padding: 20px;
 }
@@ -95,23 +93,38 @@ max-height: fit-content;
 }
 .flex {
     display: flex;
+    gap: 5px;
+}
+
+.orange {
+    background-color: hsla(0, 100%, 67%, 0.089);
+  
+  
 }
 .reaction {
     color: var(--primary-light-red);
-}
-span {
-    color: var(--dark-grey-blue);
-}
+} 
 .score {
-    color: var(--neutral-lavender);
+    color: var(--dark-grey-blue);
     font-weight: bold;
 }
-
+span {
+    opacity: 0.5;
+}
+.yellow {
+    background-color: hsla(39, 100%, 56%, 0.087);
+}
 .memory {
     color: var(--primary-yellow);
 }
+.green {
+    background-color: hsla(166, 100%, 37%, 0.094);;
+}
 .verbal {
 color: var(--primary-green-teal);
+}
+.blue {
+    background-color: hsla(234, 85%, 45%, 0.089);
 }
 .visual {
     color: var(--primary-vobalt-blue);
@@ -134,9 +147,16 @@ color: var(--primary-green-teal);
 
 @media only screen and (min-width: 992px) {
     body {
-/* padding: 0 20px 0 20px; */
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
     }
 .container {
+    height: 60%;
+   width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -145,10 +165,24 @@ color: var(--primary-green-teal);
 }
 
 .inside {
+    padding: 50px;
+    height: 100%;
     width: 50%;
+    border-radius: 30px;
 }
 .summary {
+    padding: 40px;
+    height: 100%;
     width: 50%;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 5px 5px 16px #888888;
+}
+.circle {
+    height: 200px;
+ width: 160px;
+}
+.text {
+    gap: 10px;
 }
 
 }
