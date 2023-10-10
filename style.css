@@ -46,6 +46,7 @@ max-height: fit-content;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     height: 40%;
     width: 40%;
+    padding: 10px;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
@@ -72,7 +73,7 @@ max-height: fit-content;
 
 
 .summary {
-    height: 70%;
+    height: 60%;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
@@ -85,8 +86,35 @@ max-height: fit-content;
 .box {
     height: 60px;
     width: 100%;
-    background-color: blue;
+    background-color: var(--neutral-white);
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.flex {
+    display: flex;
+}
+.reaction {
+    color: var(--primary-light-red);
+}
+span {
+    color: var(--dark-grey-blue);
+}
+.score {
+    color: var(--neutral-lavender);
+    font-weight: bold;
+}
+
+.memory {
+    color: var(--primary-yellow);
+}
+.verbal {
+color: var(--primary-green-teal);
+}
+.visual {
+    color: var(--primary-vobalt-blue);
 }
 
 .summary button {
