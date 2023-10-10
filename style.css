@@ -26,7 +26,8 @@ body {
 /* background-color: var(--neutral-white); */
 height: 100%;
 background-color: rgb(144, 201, 201);
-/* font-size: 18px; */
+min-height: fit-content;
+max-height: fit-content;
 }
 .inside {
     background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
@@ -71,12 +72,36 @@ background-color: rgb(144, 201, 201);
 
 
 .summary {
-    height: 50%;
-    /* max-height: fit-content; */
+    height: 70%;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   /* align-items: center; */
+    gap: 20px;
+    padding: 20px;
 }
 
+.box {
+    height: 60px;
+    width: 100%;
+    background-color: blue;
+    border-radius: 15px;
+}
 
+.summary button {
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1em;
+    padding: 20px 50px;
+    border: var(--dark-grey-blue);
+    color: var(--neutral-white);
+    background-color: var(--dark-grey-blue);
+}
+
+.summary h3 {
+    color: var(--dark-grey-blue);
+}
 
 
 @media only screen and (min-width: 992px) {
